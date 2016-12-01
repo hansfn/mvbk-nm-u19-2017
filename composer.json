@@ -23,7 +23,14 @@
         "drush/drush": "~8.0",
         "drupal/console": "~1.0",
         "drupal/bootstrap": "~3.0",
-        "drupal/coffee": "~1.0"
+        "drupal/coffee": "~1.0",
+        "drupal/media_entity_image": "~1.0",
+        "drupal/file_browser": "~1.0",
+        "drupal/inline_entity_form": "~1.0",
+        "drupal/token": "~1.0",
+        "enyo/dropzone": "^4.3",
+        "desandro/imagesloaded": "^4.1",
+        "desandro/masonry": "^4.1"
     },
     "require-dev": {
         "behat/mink": "~1.7",
