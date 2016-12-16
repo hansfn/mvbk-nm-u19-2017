@@ -24,6 +24,7 @@
         "drupal/console": "~1.0",
         "drupal/bootstrap": "~3.0",
         "drupal/coffee": "~1.0",
+        "drupal/media_entity": "~1.0",
         "drupal/media_entity_image": "~1.0",
         "drupal/file_browser": "~1.0",
         "drupal/inline_entity_form": "~1.0",
@@ -76,6 +77,11 @@
             "web/profiles/contrib/{$name}": ["type:drupal-profile"],
             "web/themes/contrib/{$name}": ["type:drupal-theme"],
             "drush/contrib/{$name}": ["type:drupal-drush"]
+        },
+        "patches": {
+            "drupal/media_entity": {
+                "Ugly hack to link embedded images": "https://www.drupal.org/files/issues/media_entity-2511404-10.patch"
+            }
         }
     }
 }

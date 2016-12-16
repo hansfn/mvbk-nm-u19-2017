@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "e50d2e63f9fba03b1de1daf012fbe807",
+    "content-hash": "b32eac897c6a370c28274a15618075a4",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -2295,7 +2295,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/media_entity-8.x-1.6.zip",
-                "reference": "8.x-1.6",
+                "reference": null,
                 "shasum": "86fd1478f2448c034660faa30ef34c0e8519fecb"
             },
             "require": {
@@ -2314,6 +2314,9 @@
                 "drupal": {
                     "version": "8.x-1.6",
                     "datestamp": "1480363983"
+                },
+                "patches_applied": {
+                    "Ugly hack to link embedded images": "https://www.drupal.org/files/issues/media_entity-2511404-10.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -2342,8 +2345,16 @@
                     "homepage": "https://www.drupal.org/user/134410"
                 },
                 {
+                    "name": "chr.fritsch",
+                    "homepage": "https://www.drupal.org/user/2103716"
+                },
+                {
                     "name": "jcisio",
                     "homepage": "https://www.drupal.org/user/210762"
+                },
+                {
+                    "name": "seanB",
+                    "homepage": "https://www.drupal.org/user/545912"
                 },
                 {
                     "name": "slashrsm",
