@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "82c5090418897b32b8611a86e6de3461",
+    "content-hash": "9dd708cd430ddea5e4f9852dcadf2e51",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -110,6 +110,199 @@
                 "stack"
             ],
             "time": "2016-08-01T12:05:04+00:00"
+        },
+        {
+            "name": "commerceguys/addressing",
+            "version": "v1.0.0-beta2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/commerceguys/addressing.git",
+                "reference": "3ab5a1b22598403695d99470193db1d2426d5cf7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/commerceguys/addressing/zipball/3ab5a1b22598403695d99470193db1d2426d5cf7",
+                "reference": "3ab5a1b22598403695d99470193db1d2426d5cf7",
+                "shasum": ""
+            },
+            "require": {
+                "commerceguys/enum": "~1.0",
+                "doctrine/collections": "~1.0",
+                "php": ">=5.5.0"
+            },
+            "require-dev": {
+                "mikey179/vfsstream": "1.*",
+                "phpunit/phpunit": "~4.0",
+                "squizlabs/php_codesniffer": "2.*",
+                "symfony/intl": ">=2.3",
+                "symfony/validator": ">=2.3"
+            },
+            "suggest": {
+                "commerceguys/intl": "to use it as the source of country data",
+                "symfony/intl": "to use it as the source of country data",
+                "symfony/validator": "to validate addresses"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "CommerceGuys\\Addressing\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Bojan Zivanovic"
+                },
+                {
+                    "name": "Damien Tournoud"
+                }
+            ],
+            "description": "Addressing library powered by Google's address data.",
+            "keywords": [
+                "address",
+                "internationalization",
+                "localization",
+                "postal"
+            ],
+            "time": "2016-12-07T10:15:17+00:00"
+        },
+        {
+            "name": "commerceguys/enum",
+            "version": "v1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/commerceguys/enum.git",
+                "reference": "1d9db2dbeb1a02500e7a14589ae2f9cb402c5c95"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/commerceguys/enum/zipball/1d9db2dbeb1a02500e7a14589ae2f9cb402c5c95",
+                "reference": "1d9db2dbeb1a02500e7a14589ae2f9cb402c5c95",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "CommerceGuys\\Enum\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Bojan Zivanovic"
+                }
+            ],
+            "description": "A PHP 5.4+ enumeration library.",
+            "time": "2015-02-27T21:36:56+00:00"
+        },
+        {
+            "name": "commerceguys/intl",
+            "version": "v0.7.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/commerceguys/intl.git",
+                "reference": "edfcfc26ed8505c4f6fcf862eb36dfda1af74b00"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/commerceguys/intl/zipball/edfcfc26ed8505c4f6fcf862eb36dfda1af74b00",
+                "reference": "edfcfc26ed8505c4f6fcf862eb36dfda1af74b00",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "mikey179/vfsstream": "1.*",
+                "phpunit/phpunit": "~4.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "CommerceGuys\\Intl\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Bojan Zivanovic"
+                }
+            ],
+            "description": "Internationalization library powered by CLDR data.",
+            "time": "2016-12-13T12:33:19+00:00"
+        },
+        {
+            "name": "commerceguys/zone",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/commerceguys/zone.git",
+                "reference": "36fe2e8f5a8091bf18417d6d409e363677122a99"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/commerceguys/zone/zipball/36fe2e8f5a8091bf18417d6d409e363677122a99",
+                "reference": "36fe2e8f5a8091bf18417d6d409e363677122a99",
+                "shasum": ""
+            },
+            "require": {
+                "commerceguys/addressing": "~1.0",
+                "doctrine/collections": "~1.0",
+                "php": ">=5.5.0"
+            },
+            "require-dev": {
+                "mikey179/vfsstream": "1.*",
+                "phpunit/phpunit": "~4.0",
+                "squizlabs/php_codesniffer": "2.*",
+                "symfony/intl": ">=2.3"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "CommerceGuys\\Zone\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Bojan Zivanovic"
+                }
+            ],
+            "description": "Zone management library.",
+            "time": "2016-09-26 10:22:50"
         },
         {
             "name": "composer/installers",
@@ -1142,6 +1335,55 @@
             "time": "2016-11-05T10:46:44+00:00"
         },
         {
+            "name": "drupal/address",
+            "version": "dev-1.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/address",
+                "reference": "bca416ec9536f2da14b2407104a0556a23343c92"
+            },
+            "require": {
+                "commerceguys/addressing": "~1.0",
+                "commerceguys/intl": "~0.7",
+                "commerceguys/zone": "~1.0",
+                "drupal/core": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0-rc3+4-dev",
+                    "datestamp": "1485214683"
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "bojanz",
+                    "homepage": "https://www.drupal.org/user/86106"
+                },
+                {
+                    "name": "googletorp",
+                    "homepage": "https://www.drupal.org/user/386230"
+                },
+                {
+                    "name": "rszrama",
+                    "homepage": "https://www.drupal.org/user/49344"
+                }
+            ],
+            "description": "Provides functionality for storing, validating and displaying international postal addresses.",
+            "homepage": "http://drupal.org/project/address",
+            "support": {
+                "source": "http://cgit.drupalcode.org/address"
+            },
+            "time": "2017-01-23 23:39:41"
+        },
+        {
             "name": "drupal/admin_toolbar",
             "version": "1.18.0",
             "source": {
@@ -1317,6 +1559,76 @@
                 "issues": "https://drupal.org/project/issues/coffee",
                 "irc": "irc://irc.freenode.org/drupal-contribute"
             }
+        },
+        {
+            "name": "drupal/commerce",
+            "version": "dev-2.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/commerce",
+                "reference": "9b7bff4349672aed2516d52b9f1a5593d6000d6c"
+            },
+            "require": {
+                "commerceguys/intl": "~0.7",
+                "drupal/address": "1.x-dev",
+                "drupal/core": "~8.2",
+                "drupal/entity": "1.x-dev",
+                "drupal/entity_reference_revisions": "~1.0",
+                "drupal/inline_entity_form": "~1.0",
+                "drupal/profile": "1.x-dev",
+                "drupal/state_machine": "~1.0",
+                "ext-bcmath": "*"
+            },
+            "require-dev": {
+                "drupal/commerce_cart": "*",
+                "drupal/commerce_order": "*",
+                "drupal/commerce_payment": "*",
+                "drupal/commerce_price": "*",
+                "drupal/commerce_product": "*",
+                "drupal/commerce_store": "*",
+                "drupal/entity_reference_revisions": "*",
+                "drupal/inline_entity_form": "*",
+                "drupal/profile": "*",
+                "drupal/state_machine": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-2.x": "2.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-2.0-beta5+24-dev",
+                    "datestamp": "1485610383"
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Damien Tournoud",
+                    "homepage": "https://www.drupal.org/user/22211"
+                },
+                {
+                    "name": "bojanz",
+                    "homepage": "https://www.drupal.org/user/86106"
+                },
+                {
+                    "name": "mglaman",
+                    "homepage": "https://www.drupal.org/user/2416470"
+                },
+                {
+                    "name": "rszrama",
+                    "homepage": "https://www.drupal.org/user/49344"
+                }
+            ],
+            "description": "Drupal Commerce is a flexible eCommerce solution.",
+            "homepage": "http://drupal.org/project/commerce",
+            "support": {
+                "source": "http://cgit.drupalcode.org/commerce"
+            },
+            "time": "2017-01-28 14:06:51"
         },
         {
             "name": "drupal/console",
@@ -2175,6 +2487,60 @@
             }
         },
         {
+            "name": "drupal/entity_reference_revisions",
+            "version": "1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/entity_reference_revisions",
+                "reference": "8.x-1.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/entity_reference_revisions-8.x-1.2.zip",
+                "reference": "8.x-1.2",
+                "shasum": "15261a4237cc2a743522a7bd81e9f34e01d12843"
+            },
+            "require": {
+                "drupal/core": "~8.0"
+            },
+            "require-dev": {
+                "drupal/diff": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.2",
+                    "datestamp": "1485790085"
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Frans",
+                    "homepage": "https://www.drupal.org/user/514222"
+                },
+                {
+                    "name": "jeroen.b",
+                    "homepage": "https://www.drupal.org/user/1853532"
+                },
+                {
+                    "name": "miro_dietiker",
+                    "homepage": "https://www.drupal.org/user/227761"
+                }
+            ],
+            "description": "Adds a Entity Reference field type with revision support.",
+            "homepage": "https://www.drupal.org/project/entity_reference_revisions",
+            "support": {
+                "source": "http://cgit.drupalcode.org/entity_reference_revisions"
+            }
+        },
+        {
             "name": "drupal/file_browser",
             "version": "1.0.0-alpha4",
             "source": {
@@ -2185,7 +2551,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/file_browser-8.x-1.0-alpha4.zip",
-                "reference": null,
+                "reference": "8.x-1.0-alpha4",
                 "shasum": "3f983634b5883ea31fcd08ea33a7238ea4f62614"
             },
             "require": {
@@ -2429,6 +2795,152 @@
             "support": {
                 "source": "https://www.drupal.org/project/media_entity_image",
                 "issues": "https://www.drupal.org/project/issues/media_entity_image"
+            }
+        },
+        {
+            "name": "drupal/profile",
+            "version": "dev-1.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/profile",
+                "reference": "c4d1ad2fddfb801d714bcecca784d8cc0ddb8083"
+            },
+            "require": {
+                "drupal/core": "~8.1",
+                "drupal/entity": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0-alpha5+13-dev",
+                    "datestamp": "1484833683"
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "bojanz",
+                    "homepage": "https://www.drupal.org/user/86106"
+                },
+                {
+                    "name": "dakala",
+                    "homepage": "https://www.drupal.org/user/53175"
+                },
+                {
+                    "name": "fago",
+                    "homepage": "https://www.drupal.org/user/16747"
+                },
+                {
+                    "name": "mglaman",
+                    "homepage": "https://www.drupal.org/user/2416470"
+                },
+                {
+                    "name": "pcambra",
+                    "homepage": "https://www.drupal.org/user/122101"
+                }
+            ],
+            "description": "Provides configurable user profiles.",
+            "homepage": "http://drupal.org/project/profile",
+            "support": {
+                "source": "http://cgit.drupalcode.org/profile"
+            },
+            "time": "2017-01-19 16:50:30"
+        },
+        {
+            "name": "drupal/state_machine",
+            "version": "1.0.0-beta3",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/state_machine",
+                "reference": "8.x-1.0-beta3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/state_machine-8.x-1.0-beta3.zip",
+                "reference": "8.x-1.0-beta3",
+                "shasum": "9ca0101738db00673f2511707a76d6ea0c9ce4db"
+            },
+            "require": {
+                "drupal/core": "~8.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0-beta3",
+                    "datestamp": "1477868939"
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Brandonian",
+                    "homepage": "https://www.drupal.org/user/77766"
+                },
+                {
+                    "name": "Elijah Lynn",
+                    "homepage": "https://www.drupal.org/user/353190"
+                },
+                {
+                    "name": "arithmetric",
+                    "homepage": "https://www.drupal.org/user/162305"
+                },
+                {
+                    "name": "bojanz",
+                    "homepage": "https://www.drupal.org/user/86106"
+                },
+                {
+                    "name": "das-peter",
+                    "homepage": "https://www.drupal.org/user/762870"
+                },
+                {
+                    "name": "e2thex",
+                    "homepage": "https://www.drupal.org/user/189123"
+                },
+                {
+                    "name": "ericduran",
+                    "homepage": "https://www.drupal.org/user/244460"
+                },
+                {
+                    "name": "fmitchell",
+                    "homepage": "https://www.drupal.org/user/213574"
+                },
+                {
+                    "name": "indytechcook",
+                    "homepage": "https://www.drupal.org/user/245817"
+                },
+                {
+                    "name": "robeano",
+                    "homepage": "https://www.drupal.org/user/67660"
+                },
+                {
+                    "name": "stevector",
+                    "homepage": "https://www.drupal.org/user/179805"
+                },
+                {
+                    "name": "timcosgrove",
+                    "homepage": "https://www.drupal.org/user/118452"
+                },
+                {
+                    "name": "zroger",
+                    "homepage": "https://www.drupal.org/user/67977"
+                }
+            ],
+            "description": "Provides code-driven workflow functionality.",
+            "homepage": "https://www.drupal.org/project/state_machine",
+            "support": {
+                "source": "http://cgit.drupalcode.org/state_machine"
             }
         },
         {
@@ -7006,10 +7518,18 @@
             "time": "2016-10-13T13:35:11+00:00"
         }
     ],
-    "aliases": [],
+    "aliases": [
+        {
+            "alias": "1.x-dev",
+            "alias_normalized": "1.9999999.9999999.9999999-dev",
+            "version": "1.0.0.0-alpha4",
+            "package": "drupal/entity"
+        }
+    ],
     "minimum-stability": "dev",
     "stability-flags": {
-        "drupal/ctools": 15
+        "drupal/ctools": 15,
+        "drupal/commerce": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
