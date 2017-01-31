@@ -2040,7 +2040,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/entity_browser-8.x-1.0-beta4.zip",
-                "reference": null,
+                "reference": "8.x-1.0-beta4",
                 "shasum": "7e79b579e0d8d7c42f408cd54da328318cb4f398"
             },
             "require": {
@@ -2176,17 +2176,17 @@
         },
         {
             "name": "drupal/file_browser",
-            "version": "1.0.0-alpha3",
+            "version": "1.0.0-alpha4",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/file_browser",
-                "reference": "8.x-1.0-alpha3"
+                "reference": "8.x-1.0-alpha4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/file_browser-8.x-1.0-alpha3.zip",
-                "reference": "8.x-1.0-alpha3",
-                "shasum": "46deab7e9f1d95eb3e9508e017ba3369455d0115"
+                "url": "https://ftp.drupal.org/files/projects/file_browser-8.x-1.0-alpha4.zip",
+                "reference": null,
+                "shasum": "3f983634b5883ea31fcd08ea33a7238ea4f62614"
             },
             "require": {
                 "drupal/core": "*",
@@ -2201,8 +2201,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0-alpha3",
-                    "datestamp": "1480354680"
+                    "version": "8.x-1.0-alpha4",
+                    "datestamp": "1485822183"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
