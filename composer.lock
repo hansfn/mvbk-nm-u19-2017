@@ -1599,6 +1599,9 @@
                 "drupal": {
                     "version": "8.x-2.0-beta5+24-dev",
                     "datestamp": "1485610383"
+                },
+                "patches_applied": {
+                    "Wrong product added to cart from views page": "https://www.drupal.org/files/issues/2827721-21.diff"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",

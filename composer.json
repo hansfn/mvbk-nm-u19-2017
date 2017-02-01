@@ -83,6 +83,9 @@
         "patches": {
             "drupal/media_entity": {
                 "Ugly hack to link embedded images": "https://www.drupal.org/files/issues/media_entity-2511404-10.patch"
+            },
+            "drupal/commerce": {
+                "Wrong product added to cart from views page": "https://www.drupal.org/files/issues/2827721-21.diff"
             }
         }
     }
