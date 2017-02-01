@@ -35,7 +35,8 @@
         "desandro/masonry": "^4.1",
         "drupal/admin_toolbar": "^1.18",
         "drupal/ctools": "^3.0@alpha",
-        "drupal/commerce": "2.x-dev"
+        "drupal/commerce": "2.x-dev",
+        "drupal/mimemail": "1.x-dev"
     },
     "require-dev": {
         "behat/mink": "~1.7",
@@ -86,6 +87,9 @@
             },
             "drupal/commerce": {
                 "Wrong product added to cart from views page": "https://www.drupal.org/files/issues/2827721-21.diff"
+            },
+            "drupal/mimemail": {
+                "HTML messages are not constructed correctly": "https://www.drupal.org/files/issues/mime_html_messages_are-2806795-2.patch"
             }
         }
     }
