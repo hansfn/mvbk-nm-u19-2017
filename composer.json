@@ -83,6 +83,9 @@
             "drush/contrib/{$name}": ["type:drupal-drush"]
         },
         "patches": {
+            "drupal/core": {
+                "View output is not used for autocomplete display": "https://www.drupal.org/files/issues/2174633-98.patch"
+            },
             "drupal/media_entity": {
                 "Ugly hack to link embedded images": "https://www.drupal.org/files/issues/media_entity-2511404-10.patch"
             },
