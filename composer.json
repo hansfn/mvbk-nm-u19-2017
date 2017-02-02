@@ -36,7 +36,8 @@
         "drupal/admin_toolbar": "^1.18",
         "drupal/ctools": "^3.0@alpha",
         "drupal/commerce": "2.x-dev",
-        "drupal/mimemail": "1.x-dev"
+        "drupal/mimemail": "1.x-dev",
+        "drupal/transliterate": "^1.3"
     },
     "require-dev": {
         "behat/mink": "~1.7",
