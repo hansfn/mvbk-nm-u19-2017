@@ -1,0 +1,22 @@
+uuid: 8a0b694d-82fc-4085-a96f-a8822e4738bf
+langcode: nb
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - bootstrap
+_core:
+  default_config_hash: F3d5hyAFunLh4PhGviJF019fHn1Z3_zy5gzsQ0tX1K0
+id: bootstrap_search
+theme: bootstrap
+region: footer
+weight: -1
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: Søk
+  provider: search
+  label_display: visible
+visibility: {  }

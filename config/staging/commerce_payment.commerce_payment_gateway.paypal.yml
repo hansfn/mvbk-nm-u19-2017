@@ -1,0 +1,18 @@
+uuid: 526412b5-113f-46f9-a5ba-05df26c848b9
+langcode: nb
+status: true
+dependencies:
+  module:
+    - commerce_paypal
+id: paypal
+label: PayPal
+weight: null
+plugin: paypal_express_checkout
+configuration:
+  api_username: kasserer_api1.mvbk.no
+  api_password: ECTNNWH2T8G9JL3P
+  signature: AFcWxV21C7fd0v3bYYYRCpSSRl31AGDuxrWvwBH-hy1fz6KrFcD-zUCJ
+  solution_type: SoleBilling
+  mode: live
+  payment_method_types:
+    - credit_card

@@ -1,0 +1,57 @@
+uuid: 987e7694-f8e9-4880-b87c-843a8d540e0e
+langcode: nb
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.team.field_class
+    - field.field.taxonomy_term.team.field_club
+    - field.field.taxonomy_term.team.field_homepage
+    - field.field.taxonomy_term.team.field_image
+    - field.field.taxonomy_term.team.field_place
+    - image.style.max_220x220
+    - taxonomy.vocabulary.team
+  module:
+    - image
+    - link
+    - text
+id: taxonomy_term.team.default
+targetEntityType: taxonomy_term
+bundle: team
+mode: default
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+  field_homepage:
+    weight: 2
+    label: inline
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+  field_image:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: max_220x220
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+  field_place:
+    weight: 1
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+hidden:
+  field_class: true
+  field_club: true
+  langcode: true

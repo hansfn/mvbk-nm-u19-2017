@@ -1,0 +1,78 @@
+uuid: 52d1a174-4a42-4a81-ad83-6832f04186d9
+langcode: nb
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.team.field_class
+    - field.field.taxonomy_term.team.field_club
+    - field.field.taxonomy_term.team.field_homepage
+    - field.field.taxonomy_term.team.field_image
+    - field.field.taxonomy_term.team.field_place
+    - image.style.thumbnail
+    - taxonomy.vocabulary.team
+  module:
+    - image
+    - link
+    - path
+    - text
+id: taxonomy_term.team.default
+targetEntityType: taxonomy_term
+bundle: team
+mode: default
+content:
+  description:
+    type: text_textarea
+    weight: 5
+    settings:
+      placeholder: ''
+      rows: 5
+    third_party_settings: {  }
+  field_class:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+  field_club:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+  field_homepage:
+    weight: 4
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+  field_image:
+    weight: 6
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+  field_place:
+    weight: 3
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+  langcode:
+    type: language_select
+    weight: 7
+    settings: {  }
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 8
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }
