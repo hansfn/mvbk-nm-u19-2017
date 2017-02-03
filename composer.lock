@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "f95a4ef6bce4475916dd59686ad56327",
+    "content-hash": "55df227b0052298eedea4ca6f5c95d85",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -1445,6 +1445,52 @@
             }
         },
         {
+            "name": "drupal/auto_entitylabel",
+            "version": "dev-1.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/auto_entitylabel",
+                "reference": "6b45fedc21eb840c83ea97d907424aa4e3b0b73b"
+            },
+            "require": {
+                "drupal/core": "~8.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.x-dev",
+                    "datestamp": "1477054139"
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Pravin Ajaaz",
+                    "homepage": "https://www.drupal.org/user/2910049"
+                },
+                {
+                    "name": "bforchhammer",
+                    "homepage": "https://www.drupal.org/user/216396"
+                },
+                {
+                    "name": "purushotam.rai",
+                    "homepage": "https://www.drupal.org/user/3193859"
+                }
+            ],
+            "description": "Allows hiding of entity label fields and automatic label creation.",
+            "homepage": "https://www.drupal.org/project/auto_entitylabel",
+            "support": {
+                "source": "http://cgit.drupalcode.org/auto_entitylabel"
+            },
+            "time": "2016-10-21 12:46:16"
+        },
+        {
             "name": "drupal/bootstrap",
             "version": "3.1.0",
             "source": {
@@ -1999,6 +2045,11 @@
                 "symfony/css-selector": "~2.8"
             },
             "type": "drupal-core",
+            "extra": {
+                "patches_applied": {
+                    "View output is not used for autocomplete display": "https://www.drupal.org/files/issues/2174633-98.patch"
+                }
+            },
             "autoload": {
                 "psr-4": {
                     "Drupal\\Core\\": "lib/Drupal/Core",
@@ -7686,7 +7737,8 @@
     "stability-flags": {
         "drupal/ctools": 15,
         "drupal/commerce": 20,
-        "drupal/mimemail": 20
+        "drupal/mimemail": 20,
+        "drupal/auto_entitylabel": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
