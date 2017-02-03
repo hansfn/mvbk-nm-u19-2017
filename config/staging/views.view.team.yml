@@ -159,7 +159,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: Title
+          label: Navn
           exclude: false
           alter:
             alter_text: false

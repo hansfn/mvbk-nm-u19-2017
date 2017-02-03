@@ -3,7 +3,7 @@ langcode: nb
 status: true
 dependencies:
   config:
-    - image.style.medium
+    - image.style.file_entity_browser_thumbnail
   module:
     - entity_browser
     - image
@@ -71,7 +71,7 @@ display:
         type: grid
         options:
           grouping: {  }
-          columns: 4
+          columns: 3
           automatic_width: true
           alignment: horizontal
           col_class_default: true
@@ -252,7 +252,7 @@ display:
           click_sort_column: target_id
           type: image
           settings:
-            image_style: medium
+            image_style: file_entity_browser_thumbnail
             image_link: ''
           group_column: ''
           group_columns: {  }

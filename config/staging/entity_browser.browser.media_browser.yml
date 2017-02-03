@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - media_entity.bundle.bilde
+    - views.view.media_list
   module:
     - dropzonejs_eb_widget
     - media_entity
@@ -40,6 +41,7 @@ widgets:
       view: media_list
       view_display: entity_browser_1
       submit_text: 'Velg bilder'
+      auto_select: false
     uuid: c91f814f-0ab5-4e07-833c-c1432f1c947e
     weight: 2
     label: Mediabibliotek
