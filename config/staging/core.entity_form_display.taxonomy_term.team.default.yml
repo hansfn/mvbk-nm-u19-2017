@@ -8,7 +8,7 @@ dependencies:
     - field.field.taxonomy_term.team.field_homepage
     - field.field.taxonomy_term.team.field_image
     - field.field.taxonomy_term.team.field_place
-    - image.style.thumbnail
+    - image.style.max_220x220
     - taxonomy.vocabulary.team
   module:
     - image
@@ -22,10 +22,10 @@ mode: default
 content:
   description:
     type: text_textarea
-    weight: 5
+    weight: 6
     settings:
-      placeholder: ''
       rows: 5
+      placeholder: 'Lagets tidligere resultater (beste plasseringer i NM ev. andre resultater) '
     third_party_settings: {  }
   field_class:
     weight: 2
@@ -45,10 +45,10 @@ content:
     third_party_settings: {  }
     type: link_default
   field_image:
-    weight: 6
+    weight: 5
     settings:
+      preview_image_style: max_220x220
       progress_indicator: throbber
-      preview_image_style: thumbnail
     third_party_settings: {  }
     type: image_image
   field_place:
