@@ -42,7 +42,8 @@
         "drupal/devel": "^1.0@RC",
         "drupal/prepopulate": "^2.0@alpha",
         "drupal/masquerade": "^2.0@beta",
-        "drupal/ds": "^2.6"
+        "drupal/ds": "^2.6",
+        "drupal/bootstrap_layouts": "^4.1"
     },
     "require-dev": {
         "behat/mink": "~1.7",
