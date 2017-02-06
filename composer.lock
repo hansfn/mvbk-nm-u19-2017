@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "bb0da683a52699f777da1b8935d4956c",
+    "content-hash": "9ac9125ec151bb3602635a7e951eee9d",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -1556,7 +1556,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/bootstrap_layouts-8.x-4.1.zip",
-                "reference": null,
+                "reference": "8.x-4.1",
                 "shasum": "3f1e7598e9a476e4d396ddc1e49cd2851e948a2c"
             },
             "require": {
@@ -3401,6 +3401,62 @@
                 "source": "http://cgit.drupalcode.org/profile"
             },
             "time": "2017-01-19 16:50:30"
+        },
+        {
+            "name": "drupal/search_api",
+            "version": "1.0.0-beta4",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/search_api",
+                "reference": "8.x-1.0-beta4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/search_api-8.x-1.0-beta4.zip",
+                "reference": null,
+                "shasum": "77e79980b56ca722080477e5b3e9aa8fffa87fb1"
+            },
+            "require": {
+                "drupal/core": "^8.2"
+            },
+            "require-dev": {
+                "drupal/search_api_db": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0-beta4",
+                    "datestamp": "1483286941"
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Thomas Seidl",
+                    "homepage": "https://www.drupal.org/u/drunken-monkey"
+                },
+                {
+                    "name": "Nick Veenhof",
+                    "homepage": "https://www.drupal.org/u/nick_vh"
+                },
+                {
+                    "name": "See other contributors",
+                    "homepage": "https://www.drupal.org/node/790418/committers"
+                }
+            ],
+            "description": "Provides a generic framework for modules offering search capabilities.",
+            "homepage": "https://www.drupal.org/project/search_api",
+            "support": {
+                "source": "http://git.drupal.org/project/search_api.git",
+                "issues": "https://www.drupal.org/project/issues/search_api",
+                "irc": "irc://irc.freenode.org/drupal-search-api"
+            }
         },
         {
             "name": "drupal/state_machine",
@@ -8127,7 +8183,8 @@
         "drupal/auto_entitylabel": 20,
         "drupal/devel": 5,
         "drupal/prepopulate": 15,
-        "drupal/masquerade": 10
+        "drupal/masquerade": 10,
+        "drupal/search_api": 10
     },
     "prefer-stable": true,
     "prefer-lowest": false,
