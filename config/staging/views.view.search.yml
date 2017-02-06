@@ -69,6 +69,8 @@ display:
             'entity:node':
               article: search_result
               page: search_result
+            'entity:taxonomy_term':
+              team: search_resultat
       fields:
         title:
           table: search_api_index_default_index
