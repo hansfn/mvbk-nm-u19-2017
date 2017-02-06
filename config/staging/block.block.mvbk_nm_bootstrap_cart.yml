@@ -10,7 +10,7 @@ dependencies:
 id: mvbk_nm_bootstrap_cart
 theme: mvbk_nm_bootstrap
 region: sidebar_second
-weight: -6
+weight: -7
 provider: null
 plugin: commerce_cart
 settings:

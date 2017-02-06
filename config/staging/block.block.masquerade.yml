@@ -10,7 +10,7 @@ dependencies:
 id: masquerade
 theme: mvbk_nm_bootstrap
 region: sidebar_second
-weight: 0
+weight: -6
 provider: null
 plugin: masquerade
 settings:

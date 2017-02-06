@@ -580,14 +580,15 @@ display:
         type: 'default tab'
         title: Innhold
         description: ''
-        menu_name: admin
+        expanded: false
+        parent: ''
         weight: -10
-        context: ''
+        context: '0'
+        menu_name: admin
       tab_options:
         type: normal
         title: Innhold
         description: 'Finn og administrer innhold'
-        menu_name: admin
         weight: -10
       display_extenders: {  }
     display_plugin: page
