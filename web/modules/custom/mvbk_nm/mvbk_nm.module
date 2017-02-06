@@ -33,4 +33,9 @@ function mvbk_nm_form_alter(&$form, FormStateInterface $form_state, $form_id) {
       $form['field_team']['#disabled'] = TRUE;
     }
   }
+  elseif ($form_id == 'views_exposed_form') {
+    if (isset($form['sok'])) {
+      $form['sok']['#size'] = 20;
+    }
+  }
 }
