@@ -8,15 +8,17 @@ use Drupal\Core\Form\FormStateInterface;
 function mvbk_nm_form_alter(&$form, FormStateInterface $form_state, $form_id) {
   if ($form_id == 'taxonomy_term_team_form') {
     $roles = \Drupal::currentUser()->getRoles();
-    if(!in_array("administrator", $roles)){
+    if (!in_array("administrator", $roles)){
       $form['field_class']['#disabled'] = TRUE;
       $form['field_club']['#disabled'] = TRUE;
+      $form['field_seed']['#disabled'] = TRUE;
+      $form['field_group']['#disabled'] = TRUE;
       $form['relations']['#access'] = FALSE;
     }
   }
   elseif (($form_id == 'node_person_form') || ($form_id == 'node_person_edit_form')) {
     $roles = \Drupal::currentUser()->getRoles();
-    if(!in_array("administrator", $roles)){
+    if (!in_array("administrator", $roles)){
       $form['revision_information']['#access'] = FALSE;
     }
   }
@@ -26,10 +28,13 @@ function mvbk_nm_form_alter(&$form, FormStateInterface $form_state, $form_id) {
   elseif ($form_id == 'user_register_form') {
     $form['account']['name']['#title'] = 'Ditt fulle navn (som brukernavn)';
     $form['account']['name']['#description'] = 'Ditt fulle navn - "Fornavn Etternavn". Norske tegn går helt fint.'; 
+    if (\Drupal::currentUser()->id() != 1) {
+      $form['field_team']['widget']['#required'] = TRUE;
+    }
   }
   elseif ($form_id == 'user_form') {
     $roles = \Drupal::currentUser()->getRoles();
-    if(!in_array("administrator", $roles)){
+    if (!in_array("administrator", $roles)){
       $form['field_team']['#disabled'] = TRUE;
     }
   }
