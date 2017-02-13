@@ -18,6 +18,9 @@ configuration:
       allow_registration: false
       step: login
       weight: 0
+    review:
+      step: review
+      weight: 1
     payment_process:
       capture: true
       step: payment
@@ -26,9 +29,6 @@ configuration:
       message: "<p>Ditt ordrenummer er %order_number. Du kan se dine ordre på kontosiden din.</p>\n\n<p>NB! Husk å betale for ordren samme dag til vår bankkonto 3910.39.30255. Merk betalingen med klubbnavn og ordrenummer. Takk!</p> "
       step: complete
       weight: 3
-    review:
-      step: review
-      weight: 1
     payment_information:
       step: _disabled
       weight: 4
