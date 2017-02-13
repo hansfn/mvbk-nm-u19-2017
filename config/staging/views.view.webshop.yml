@@ -2,8 +2,6 @@ uuid: cdf69517-cbea-4070-8d7c-6a328342afac
 langcode: nb
 status: true
 dependencies:
-  config:
-    - user.role.administrator
   module:
     - commerce_product
     - user
@@ -23,10 +21,9 @@ display:
     position: 0
     display_options:
       access:
-        type: role
+        type: perm
         options:
-          role:
-            administrator: administrator
+          perm: 'access content'
       cache:
         type: tag
         options: {  }
@@ -152,20 +149,7 @@ display:
           entity_field: title
           plugin_id: standard
       title: Nettbutikk
-      header:
-        area:
-          id: area
-          table: views
-          field: area
-          relationship: none
-          group_type: group
-          admin_label: ''
-          empty: false
-          tokenize: false
-          content:
-            value: "<div class=\"alert alert-success alert-dismissible\" role=\"alert\">\nVelg varene du ønsker å kjøpe nedenfor. Gå så til <a href=\"/cart\">handlevognen</a> for å velge antall - mye raskere enn å legge til varene flere ganger nedenfor. \nHusk å velge alle variantene du trenger: Middag flere dager, flere forskjellige størrelser av t-skjorten osv.\n</div>"
-            format: full_html
-          plugin_id: text
+      header: {  }
       footer: {  }
       empty: {  }
       relationships: {  }
@@ -176,7 +160,7 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
-        - user.roles
+        - user.permissions
       tags: {  }
   page_1:
     display_plugin: page
@@ -191,5 +175,5 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
-        - user.roles
+        - user.permissions
       tags: {  }
