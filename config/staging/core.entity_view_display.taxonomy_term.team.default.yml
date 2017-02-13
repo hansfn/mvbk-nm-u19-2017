@@ -5,9 +5,11 @@ dependencies:
   config:
     - field.field.taxonomy_term.team.field_class
     - field.field.taxonomy_term.team.field_club
+    - field.field.taxonomy_term.team.field_group
     - field.field.taxonomy_term.team.field_homepage
     - field.field.taxonomy_term.team.field_image
     - field.field.taxonomy_term.team.field_place
+    - field.field.taxonomy_term.team.field_seed
     - image.style.max_480x480
     - taxonomy.vocabulary.team
   module:
@@ -61,6 +63,14 @@ content:
     weight: 3
     settings: {  }
     third_party_settings: {  }
+  field_group:
+    weight: 5
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
   field_homepage:
     weight: 2
     label: inline
@@ -87,6 +97,14 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     type: string
+  field_seed:
+    weight: 4
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
 hidden:
   field_class: true
   field_club: true
