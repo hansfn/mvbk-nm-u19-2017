@@ -12,7 +12,7 @@ dependencies:
 id: informasjonomlagsiden
 theme: mvbk_nm_bootstrap
 region: content
-weight: -10
+weight: -12
 provider: null
 plugin: 'block_content:9d1e5ef9-1f31-48bb-a2ec-78e861987e2c'
 settings:
