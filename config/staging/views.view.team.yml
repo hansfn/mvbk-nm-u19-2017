@@ -902,6 +902,7 @@ display:
         header: false
         fields: false
         sorts: false
+        empty: false
       filter_groups:
         operator: AND
         groups:
@@ -1168,6 +1169,20 @@ display:
           entity_type: node
           entity_field: title
           plugin_id: standard
+      empty:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: true
+          tokenize: false
+          content:
+            value: '<p>Ingen trenere/dommer registrert ennå.</p>'
+            format: full_html
+          plugin_id: text
     cache_metadata:
       max-age: 0
       contexts:
@@ -1255,6 +1270,7 @@ display:
         filters: false
         filter_groups: false
         header: false
+        empty: false
       filter_groups:
         operator: AND
         groups:
@@ -1285,6 +1301,20 @@ display:
           tokenize: false
           content:
             value: '<h2>Spillere</h2>'
+            format: full_html
+          plugin_id: text
+      empty:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: true
+          tokenize: false
+          content:
+            value: '<p>Ingen spillere registrert ennå.</p>'
             format: full_html
           plugin_id: text
     cache_metadata:
