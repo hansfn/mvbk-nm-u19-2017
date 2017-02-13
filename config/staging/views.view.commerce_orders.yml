@@ -2,6 +2,8 @@ uuid: d688b8b7-b250-4b3f-b2b1-e913ec4ea95e
 langcode: nb
 status: true
 dependencies:
+  config:
+    - field.storage.user.field_team
   module:
     - commerce
     - commerce_order
@@ -86,16 +88,23 @@ display:
           summary: ''
           description: ''
           columns:
+            commerce_order_bulk_form: commerce_order_bulk_form
             order_number: order_number
             placed: placed
             type: type
             store_id: store_id
             uid: uid
             mail: uid
+            field_team: field_team
             state: state
             total_price__number: total_price__number
             operations: operations
           info:
+            commerce_order_bulk_form:
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
             order_number:
               sortable: true
               default_sort_order: asc
@@ -138,6 +147,13 @@ display:
               separator: ''
               empty_column: false
               responsive: ''
+            field_team:
+              sortable: true
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
             state:
               sortable: true
               default_sort_order: asc
@@ -153,8 +169,6 @@ display:
               empty_column: false
               responsive: ''
             operations:
-              sortable: false
-              default_sort_order: asc
               align: ''
               separator: ''
               empty_column: false
@@ -610,6 +624,69 @@ display:
           entity_type: commerce_order
           entity_field: mail
           plugin_id: field
+        field_team:
+          id: field_team
+          table: user__field_team
+          field: field_team
+          relationship: uid
+          group_type: group
+          admin_label: ''
+          label: Lag
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: target_id
+          type: entity_reference_label
+          settings:
+            link: false
+          group_column: target_id
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
         state:
           id: state
           table: commerce_order
@@ -931,7 +1008,18 @@ display:
           tokenize: false
           content: 'Ingen ordre tilgjengelig.'
           plugin_id: text_custom
-      relationships: {  }
+      relationships:
+        uid:
+          id: uid
+          table: commerce_order
+          field: uid
+          relationship: none
+          group_type: group
+          admin_label: Lagledere
+          required: true
+          entity_type: commerce_order
+          entity_field: uid
+          plugin_id: standard
       arguments: {  }
       display_extenders: {  }
       use_ajax: false
@@ -948,7 +1036,8 @@ display:
         - user.permissions
       cacheable: false
       max-age: 0
-      tags: {  }
+      tags:
+        - 'config:field.storage.user.field_team'
   page_1:
     display_plugin: page
     id: page_1
@@ -980,4 +1069,5 @@ display:
         - user.permissions
       cacheable: false
       max-age: 0
-      tags: {  }
+      tags:
+        - 'config:field.storage.user.field_team'
