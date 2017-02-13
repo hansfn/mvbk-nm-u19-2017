@@ -12,3 +12,6 @@ permissions:
   - 'delete own person content'
   - 'edit own person content'
   - 'edit terms in team'
+  - 'access cart'
+  - 'access checkout'
+  - 'manage own commerce_payment_method'

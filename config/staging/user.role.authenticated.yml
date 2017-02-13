@@ -17,5 +17,4 @@ permissions:
   - 'access site-wide contact form'
   - 'access shortcuts'
   - 'search content'
-  - 'access cart'
-  - 'access checkout'
+  - 'view media'
