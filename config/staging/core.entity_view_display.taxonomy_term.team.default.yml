@@ -16,6 +16,7 @@ dependencies:
     - ds
     - image
     - link
+    - options
     - text
 third_party_settings:
   ds:
@@ -66,11 +67,9 @@ content:
   field_group:
     weight: 5
     label: above
-    settings:
-      thousand_separator: ''
-      prefix_suffix: true
+    settings: {  }
     third_party_settings: {  }
-    type: number_integer
+    type: list_default
   field_homepage:
     weight: 2
     label: inline
