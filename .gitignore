@@ -36,3 +36,7 @@ web/sites/example.sites.php
 web/themes/.gitkeep
 web/update.php
 web/web.config
+
+# Ignore stuff specific for this site
+web/themes/custom/mvbk_nm_bootstrap/css/webfonts.css
+web/themes/custom/mvbk_nm_bootstrap/css/webfonts
