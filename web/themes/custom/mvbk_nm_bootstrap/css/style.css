@@ -2,10 +2,6 @@
  * Place your custom styles here.
  */
 
-div.field--name-description {
-  padding-top: 10px;
-}
-
 /**
  * Millar fonts
  */
@@ -14,4 +10,41 @@ ul.navbar-nav {
   font-family: Millar;
 }
 
+div.field--name-description {
+  padding-top: 10px;
+}
 
+.form-inline .form-control {
+  width: 100%;
+}
+
+a.navbar-brand {
+  display: none;
+}
+
+.navbar-toggle {
+  margin-top: 18px;
+  margin-bottom: 18px;
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+  a.logo {
+    width: 90%;
+  }
+  .navbar-toggle {
+    margin-top: 28px;
+    margin-bottom: 28px;
+  }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+  a.logo {
+    width: 80%;
+  }
+  .navbar-toggle {
+    margin-top: 13px;
+    margin-bottom: 13px;
+  }
+}
