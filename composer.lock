@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "9ac9125ec151bb3602635a7e951eee9d",
+    "content-hash": "0ebcae58c9a7a2595639577189a6fe6f",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -3698,6 +3698,49 @@
             "homepage": "https://www.drupal.org/project/transliterate",
             "support": {
                 "source": "http://cgit.drupalcode.org/transliterate"
+            }
+        },
+        {
+            "name": "drupal/views_send",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/views_send",
+                "reference": "8.x-1.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/views_send-8.x-1.0.zip",
+                "reference": null,
+                "shasum": "b99562455188d6da3b52d41eabe78868b315cd50"
+            },
+            "require": {
+                "drupal/core": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0",
+                    "datestamp": "1483624324"
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "hansfn",
+                    "homepage": "https://www.drupal.org/user/40521"
+                }
+            ],
+            "description": "Provides a way to send e-mails from a list created with Views",
+            "homepage": "https://www.drupal.org/project/views_send",
+            "support": {
+                "source": "http://cgit.drupalcode.org/views_send"
             }
         },
         {
