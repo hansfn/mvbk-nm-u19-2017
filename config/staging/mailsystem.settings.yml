@@ -10,3 +10,7 @@ modules:
     receipt:
       formatter: mime_mail
       sender: php_mail
+  views_send:
+    direct:
+      formatter: mime_mail
+      sender: php_mail
