@@ -7,7 +7,7 @@ _core:
 id: feedback
 label: 'Tilbakemeldinger om nettstedet'
 recipients:
-  - nm@volleyball.molde.no
+  - nm@mvbk.no
 reply: ''
 weight: 0
 message: 'Din melding har blitt sendt.'
