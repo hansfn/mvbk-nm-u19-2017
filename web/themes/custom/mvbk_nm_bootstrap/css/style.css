@@ -10,6 +10,11 @@ ul.navbar-nav {
   font-family: Millar;
 }
 
+/* IE11 hack for logo image */
+div.navbar-header .img-responsive{
+  width: 100%;
+}
+
 div.field--name-description {
   padding-top: 10px;
 }
