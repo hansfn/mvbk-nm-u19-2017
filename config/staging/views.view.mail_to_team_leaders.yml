@@ -2,9 +2,8 @@ uuid: 11302528-18c8-4f9c-b692-be90ead1f37f
 langcode: nb
 status: true
 dependencies:
-  config:
-    - field.storage.user.field_team
   module:
+    - taxonomy
     - user
     - views_send
 id: mail_to_team_leaders
@@ -54,6 +53,49 @@ display:
           offset: 0
       style:
         type: table
+        options:
+          grouping: {  }
+          row_class: ''
+          default_row_class: true
+          override: true
+          sticky: false
+          caption: ''
+          summary: ''
+          description: ''
+          columns:
+            name: name
+            name_1: name_1
+            mail: mail
+            views_send_bulk_form: views_send_bulk_form
+          info:
+            name:
+              sortable: true
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            name_1:
+              sortable: true
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            mail:
+              sortable: false
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            views_send_bulk_form:
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+          default: '-1'
+          empty_table: false
       row:
         type: fields
       fields:
@@ -122,11 +164,11 @@ display:
           entity_type: user
           entity_field: name
           plugin_id: field
-        field_team:
-          id: field_team
-          table: user__field_team
-          field: field_team
-          relationship: none
+        name_1:
+          id: name_1
+          table: taxonomy_term_field_data
+          field: name
+          relationship: field_team
           group_type: group
           admin_label: ''
           label: Lag
@@ -170,11 +212,11 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
-          click_sort_column: target_id
-          type: entity_reference_label
+          click_sort_column: value
+          type: string
           settings:
-            link: false
-          group_column: target_id
+            link_to_entity: false
+          group_column: value
           group_columns: {  }
           group_rows: true
           delta_limit: 0
@@ -184,7 +226,10 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-          plugin_id: field
+          convert_spaces: false
+          entity_type: taxonomy_term
+          entity_field: name
+          plugin_id: term_name
         mail:
           id: mail
           table: users_field_data
@@ -313,12 +358,35 @@ display:
           expose:
             operator: ''
           group: 1
-      sorts: {  }
+      sorts:
+        name:
+          id: name
+          table: users_field_data
+          field: name
+          relationship: none
+          group_type: group
+          admin_label: ''
+          order: ASC
+          exposed: false
+          expose:
+            label: ''
+          entity_type: user
+          entity_field: name
+          plugin_id: standard
       title: 'Epost til lagledere'
       header: {  }
       footer: {  }
       empty: {  }
-      relationships: {  }
+      relationships:
+        field_team:
+          id: field_team
+          table: user__field_team
+          field: field_team
+          relationship: none
+          group_type: group
+          admin_label: Lag
+          required: true
+          plugin_id: standard
       arguments: {  }
       display_extenders: {  }
     cache_metadata:
@@ -326,9 +394,9 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
+        - url.query_args
         - user.permissions
-      tags:
-        - 'config:field.storage.user.field_team'
+      tags: {  }
   page_1:
     display_plugin: page
     id: page_1
@@ -342,6 +410,6 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
+        - url.query_args
         - user.permissions
-      tags:
-        - 'config:field.storage.user.field_team'
+      tags: {  }
