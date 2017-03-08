@@ -10,8 +10,14 @@ effects:
   1cfec298-8620-4749-b100-ccb6c4500779:
     uuid: 1cfec298-8620-4749-b100-ccb6c4500779
     id: image_scale
-    weight: 0
+    weight: -9
     data:
       width: 100
       height: 100
       upscale: false
+  6b8f44e6-9b02-468b-85f2-9353b1f37c69:
+    uuid: 6b8f44e6-9b02-468b-85f2-9353b1f37c69
+    id: image_auto_orientate
+    weight: -10
+    data:
+      scan_exif: 1

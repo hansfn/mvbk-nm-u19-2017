@@ -13,8 +13,14 @@ effects:
   cb842cc8-682f-42a6-bd05-5a1ac726f0d8:
     uuid: cb842cc8-682f-42a6-bd05-5a1ac726f0d8
     id: image_scale
-    weight: 1
+    weight: -9
     data:
       width: 325
       height: 325
       upscale: false
+  05af8cda-cf80-487a-8fbb-8be65258058e:
+    uuid: 05af8cda-cf80-487a-8fbb-8be65258058e
+    id: image_auto_orientate
+    weight: -10
+    data:
+      scan_exif: 1

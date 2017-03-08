@@ -13,8 +13,14 @@ effects:
   04caae9a-fa3e-4ea6-ae09-9c26aec7d308:
     uuid: 04caae9a-fa3e-4ea6-ae09-9c26aec7d308
     id: image_scale
-    weight: 1
+    weight: -9
     data:
       width: 1300
       height: 1300
       upscale: false
+  a6aba308-04d8-4acd-acfa-1cb420a84d11:
+    uuid: a6aba308-04d8-4acd-acfa-1cb420a84d11
+    id: image_auto_orientate
+    weight: -10
+    data:
+      scan_exif: 1

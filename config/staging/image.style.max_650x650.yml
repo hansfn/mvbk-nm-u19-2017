@@ -13,8 +13,14 @@ effects:
   949c201a-77f5-48f6-ba00-be91eb1aad47:
     uuid: 949c201a-77f5-48f6-ba00-be91eb1aad47
     id: image_scale
-    weight: 1
+    weight: -9
     data:
       width: 650
       height: 650
       upscale: false
+  4ede257e-d9af-4da6-a9c9-4596f74d8354:
+    uuid: 4ede257e-d9af-4da6-a9c9-4596f74d8354
+    id: image_auto_orientate
+    weight: -10
+    data:
+      scan_exif: 1
