@@ -19,6 +19,11 @@ div.field--name-description {
   padding-top: 10px;
 }
 
+div.sponsor {
+  display: inline-block;
+  padding: 10px;
+}
+
 .form-inline .form-control {
   width: 100%;
 }
