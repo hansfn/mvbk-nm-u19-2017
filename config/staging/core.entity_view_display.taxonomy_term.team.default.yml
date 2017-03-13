@@ -9,6 +9,7 @@ dependencies:
     - field.field.taxonomy_term.team.field_homepage
     - field.field.taxonomy_term.team.field_image
     - field.field.taxonomy_term.team.field_place
+    - field.field.taxonomy_term.team.field_results
     - field.field.taxonomy_term.team.field_seed
     - image.style.max_480x480
     - taxonomy.vocabulary.team
@@ -16,7 +17,6 @@ dependencies:
     - ds
     - image
     - link
-    - options
     - text
 third_party_settings:
   ds:
@@ -53,6 +53,7 @@ third_party_settings:
         - field_place
         - field_homepage
         - description
+        - field_results
 id: taxonomy_term.team.default
 targetEntityType: taxonomy_term
 bundle: team
@@ -64,12 +65,6 @@ content:
     weight: 3
     settings: {  }
     third_party_settings: {  }
-  field_group:
-    weight: 5
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    type: list_default
   field_homepage:
     weight: 2
     label: inline
@@ -96,15 +91,20 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     type: string
-  field_seed:
+  field_results:
     weight: 4
     label: above
     settings:
-      thousand_separator: ''
-      prefix_suffix: true
+      trim_length: 100
+      url_only: false
+      url_plain: false
+      rel: '0'
+      target: '0'
     third_party_settings: {  }
-    type: number_integer
+    type: link
 hidden:
   field_class: true
   field_club: true
+  field_group: true
+  field_seed: true
   langcode: true
