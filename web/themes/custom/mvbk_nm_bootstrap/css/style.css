@@ -17,10 +17,15 @@ div.navbar-header .img-responsive{
 
 div.field--name-description {
   padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 div.sponsor {
   display: inline-block;
+  padding: 10px;
+}
+
+article.embedded-entity {
   padding: 10px;
 }
 
