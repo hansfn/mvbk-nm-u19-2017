@@ -92,7 +92,7 @@
         },
         "patches": {
             "drupal/core": {
-                "View output is not used for autocomplete display": "https://www.drupal.org/files/issues/2174633-98.patch",
+                "View output is not used for autocomplete display": "https://www.drupal.org/files/issues/2174633-143-entity-reference.patch",
                 "Add Auto orientation image effect": "https://www.drupal.org/files/issues/2664632-17.patch"
             },
             "drupal/media_entity": {
