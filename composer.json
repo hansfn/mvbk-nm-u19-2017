@@ -43,7 +43,7 @@
         "drupal/prepopulate": "^2.0@alpha",
         "drupal/masquerade": "^2.0@beta",
         "drupal/ds": "^3.0",
-        "drupal/bootstrap_layouts": "^4.1",
+        "drupal/bootstrap_layouts": "5.x-dev",
         "drupal/search_api": "^1.0@beta",
         "drupal/views_send": "^1.0"
     },
