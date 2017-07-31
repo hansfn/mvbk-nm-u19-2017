@@ -42,7 +42,7 @@
         "drupal/devel": "^1.0@RC",
         "drupal/prepopulate": "^2.0@alpha",
         "drupal/masquerade": "^2.0@beta",
-        "drupal/ds": "^2.6",
+        "drupal/ds": "^3.0",
         "drupal/bootstrap_layouts": "^4.1",
         "drupal/search_api": "^1.0@beta",
         "drupal/views_send": "^1.0"
