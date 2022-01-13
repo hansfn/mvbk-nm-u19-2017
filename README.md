@@ -1,4 +1,4 @@
-# The NM U19 2017 site for MVBK 
+# The volleyball NM U19 2017 site for MVBK 
 
 This project uses [drupal-composer/drupal-project](https://github.com/drupal-composer/drupal-project) - a composer template for Drupal 8 projects.
 
